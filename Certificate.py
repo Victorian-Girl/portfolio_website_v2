@@ -18,14 +18,22 @@ with col1:                                                                      
     st.image("certificate/CV_Game.JPG")                                                                                 # Adding an image
     st.image("certificate/CV_Web.jpg")
     st.image("certificate/CertificateMelissa.jpg")
+    st.image("certificate/CvZone_Winner_2024.jpg")
 
-with col2:                                                                                                              # Adding content to the second column                                                                                                      # Adding a header
+with col2:
+    st.markdown(" ")
+    st.markdown(" ")
+    st.image("certificate/OpenCv-Python_Refresh.jpg")# Adding content to the second column                                                                                                      # Adding a header
     st.image("certificate/Udemy_dev_Python.jpg")  # Adding an image
     st.image("certificate/Udemy_IA_2024.jpg")
-    st.markdown(" ")
-    st.image("certificate/Kaggle_Python.png")
+    st.image("certificate/Certificat_MasterClass_Python .jpg")
 
-with col3:                                                                                                              # Adding content to the third column
+with col3:
+    st.markdown(" ")
+    st.markdown(" ")
+    st.markdown(" ")
+    st.markdown(" ")
+    st.image("certificate/Kaggle_Python.png")# Adding content to the third column
     st.markdown(" ")
     st.image("certificate/Kaggle_C-V.png")                                                                              # Adding an image
     st.markdown(" ")

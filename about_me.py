@@ -2,9 +2,10 @@ import streamlit as st
 import google.generativeai as genai                                                                                     # Importing the GenAI library
 
 
-api_key = st.secrets["GOOGLE_API_KEY"]                                                                                # Getting the API key from the secrets
+# api_key = st.secrets["GOOGLE_API_KEY"]                                                                                # Getting the API key from the secrets
+api_key = "AIzaSyCQyKBHrEwd3yWVlSekVtagRcX5fIm7nV8"
 genai.configure(api_key=api_key)                                                                                        # Configuring the GenAI library
-model = genai.GenerativeModel('gemini-1.5-flash')                                                                       # Creating a GenerativeModel object
+model = genai.GenerativeModel('gemini-2.0-flash')                                                                       # Creating a GenerativeModel object
 
 
 # --- HERO SECTION ---
@@ -96,7 +97,7 @@ persona = """
 
 st.title("Mélissa's AI Bot")                                                                                            # Adding a title
 
-user_question = st.text_input("Ask anything about me, in your own language")                                             # Adding a text input
+user_question = st.text_input("Ask anything about me, in your own language and click 'ASK'")                                             # Adding a text input
 if st.button("ASK", use_container_width=400):                                                                           # Adding a button
     prompt = persona + "Here is the question that the user asked: " + user_question                                     # Creating the prompt
     response = model.generate_content(prompt)                                                                           # Generating the response
@@ -110,7 +111,7 @@ st.write("\n")
 st.subheader("Experience & Qualifications", anchor=False)                                                               # Adding a subheader
 st.write(
     """
-    - 4 Years of experience with Python
+    - 5 Years of experience with Python
     - Self-taught, always learning to improve myself
     - Resourceful, autonomous
     - I like to try new ways of doing things to find solutions
