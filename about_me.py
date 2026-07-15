@@ -111,7 +111,7 @@ st.write("\n")
 st.subheader("Experience & Qualifications", anchor=False)                                                               # Adding a subheader
 st.write(
     """
-    - 5 Years of experience with Python
+    - 7 Years of experience with Python
     - Self-taught, always learning to improve myself
     - Resourceful, autonomous
     - I like to try new ways of doing things to find solutions
